@@ -1,0 +1,161 @@
+body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+        a { text-decoration: none; }
+        .btn-gradient {
+            background: linear-gradient(to right, blue, #0035ff, #007fff, #e500b5, #f27100, #fff200);
+            border: none;
+            color: #fff;
+        }
+        .navbar{
+          background-color: #000;
+        }
+        .navbar-nav li a{
+            color: #fff;
+            font-size: larger;
+        }
+        .hero {
+            background: url('Landing Page - Imagem.png') no-repeat center center;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .hero-text {
+            max-width: 600px;
+        }
+        .Resolucao {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+        .orcamento{
+          border-radius: 50px;
+        }
+
+.Atendimento {
+  --grad: linear-gradient(
+    90deg,
+    #ff0000,
+    #ff9900,
+    #ffee00,
+    #00ccff,
+    #0035ff,
+    #8a2be2,
+    #e500b5,
+    #ff6600,
+    #ffee00
+  );
+
+  position: relative;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* barras finas laterais */
+.Atendimento::before,
+.Atendimento::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 20px;              /* espessura da barra */
+  width: 100vw;             /* cobre até as bordas da tela */
+  background: var(--grad);
+  background-size: 300% 300%;
+  animation: moveGradient 12s ease infinite;
+  z-index: 0;
+}
+.Atendimento::before { left: 0; }
+.Atendimento::after  { right: 0; }
+
+/* bloco central */
+.Atendimento .cta-box {
+  position: relative;
+  background: var(--grad);
+  background-size: 300% 300%;
+  animation: moveGradient 12s ease infinite;
+  border-radius: 14px;
+  color: #fff;
+  z-index: 1;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 120px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px 40px;
+  text-align: center;
+}
+
+/* texto */
+.cta-text h3 { margin: 0; font-weight: 700; }
+.cta-text p  { margin: 0; font-size: 0.95rem; color: #f1f1f1; }
+
+/* botão */
+.btn-cta {
+  background: #000;
+  color: #fff;
+  font-weight: 700;
+  padding: 12px 24px;
+  border-radius: 999px;
+  transition: transform .2s, background-color .2s;
+  white-space: nowrap;
+}
+.btn-cta:hover { background: #222; transform: scale(1.04); }
+
+/* animação gradiente */
+@keyframes moveGradient {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+
+
+
+
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .step-icon {
+            font-size: 2rem;
+        }
+        .section-dark {
+            background-color: #111;
+        }
+        .clients img {
+            max-width: 120px;
+            margin: 10px;
+        }
+        .services img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+        }
+        @media(max-width: 768px) {
+            .hero-text { text-align: center; margin: auto; }
+
+              .Atendimento .cta-box {
+                flex-direction: column;
+                text-align: center;
+                gap: 15px;
+                min-height: auto;
+                padding: 25px 20px;
+              }
+        }
