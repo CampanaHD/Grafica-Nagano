@@ -106,7 +106,7 @@ body {
   background: #000;
   color: #fff;
   font-weight: 700;
-  padding: 12px 24px;
+  padding: 20px 30px;
   border-radius: 999px;
   transition: transform .2s, background-color .2s;
   white-space: nowrap;
@@ -118,6 +118,22 @@ body {
   0%   { background-position: 0% 50%; }
   50%  { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
+}
+
+
+
+
+
+.products-section h5{
+  font-weight: 700;
+}
+.products-section .btn{
+  padding: 20px 80px; 
+  font-weight: 600; 
+  transition: transform .2s, background-color .2s; 
+}
+.products-section .btn:hover{
+  color: #000; transform: scale(1.04);
 }
 
 .services-section h5{
