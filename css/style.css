@@ -120,6 +120,23 @@ body {
   100% { background-position: 0% 50%; }
 }
 
+.services-section h5{
+  font-weight: bolder;
+  margin: 20px 0;
+}
+.services-end p{
+  margin: 0;
+}
+.btn-hover-{
+  font-weight: 500;
+  padding: 12px 60px;
+  border-radius: 10px;
+  transition: transform .2s, background-color .2s;
+}
+.btn-hover-:hover { 
+   color: #000; transform: scale(1.04);
+   
+  }
 
 
 
@@ -128,11 +145,21 @@ body {
 
 
 
-        .product-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 5px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .product-card {
+            border-radius: 20px;
         }
         .step-icon {
             font-size: 2rem;
