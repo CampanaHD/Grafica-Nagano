@@ -17,6 +17,9 @@ body {
             color: #fff;
             font-size: larger;
         }
+        .navbar-nav li a:hover{
+            color: #0035ff;
+        }
         .hero {
             background: url('') no-repeat center center;
             background-size: cover;
@@ -153,8 +156,20 @@ body {
    color: #000; transform: scale(1.04);
    
   }
+.card-clientes{
+  border-radius: 20px;
+}
+.card-clientes img{
+  height: 120px;
+}
 
 
+.text-gradient {
+    background: linear-gradient(to right, #0035ff, #007fff, #e500b5, #f27100, #fff200);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 
